@@ -1,0 +1,21 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# other
+/cache/*
+/assets/*
+/images/*
+/user/themes/alice/cache
+/user/csv/*
+/logs/popularity
+/logs/grav.log
+.sass-cache
+.pw
+
+# exception to the rule
+!.gitkeep
+
+node_modules

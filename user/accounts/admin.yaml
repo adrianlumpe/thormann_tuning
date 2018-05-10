@@ -1,0 +1,14 @@
+email: adrian.lumpe@t-online.de
+fullname: Admin
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$CShmH8Etxu0Tsz40d6RyU.LEScPPBWA77foifX/1zZBeEyAruWE2G
+language: en
+login_attempts: {  }
+twofa_secret: YBSHULM4GZRVSDUUX6AXNRTA5YA66IXZ
