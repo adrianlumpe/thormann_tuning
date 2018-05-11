@@ -9,6 +9,8 @@ gen
 /assets/*
 /images/*
 /user/themes/alice/cache
+/user/themes/alice/assets/css/*
+/user/themes/alice/assets/js/*
 /user/csv/*
 /logs/popularity
 /logs/grav.log
