@@ -1,0 +1,4 @@
+---
+id: image-slider
+
+---

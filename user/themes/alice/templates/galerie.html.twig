@@ -1,0 +1,18 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+  {% for image in page.media.images %}
+    <div class="card">
+      <div class="card-image">
+        <img class src="{{ image.url }}">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+      </div>
+    </div>
+  {% endfor %}
+
+{% endblock %}

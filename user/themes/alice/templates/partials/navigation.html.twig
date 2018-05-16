@@ -1,48 +1,20 @@
-{% macro loop(page) %}
-    {% for p in page.children.visible %}
-        {% set current_page = (p.active or p.activeChild) ? 'selected' : '' %}
-        {% if p.children.visible.count > 0 %}
-            <li class="has-children {{ current_page }}">
-                <a href="{{ p.url }}">
-                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
-                    {{ p.menu }}
-                </a>
-                <ul>
-                    {{ _self.loop(p) }}
-                </ul>
-            </li>
-        {% else %}
-            <li class="{{ current_page }}">
-                <a href="{{ p.url }}">
-                    {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
-                    {{ p.menu }}
-                </a>
-            </li>
-        {% endif %}
-    {% endfor %}
-{% endmacro %}
+<nav class="nav-bar">
+  <div class="nav-wrapper valign-wrapper">
+    <a href="/" class="brand-logo"><img src="{{ url('theme://assets/img/logo_nav.png') }}"></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+  </div>
+</nav>
 
-<ul>
-    {% if theme_config.dropdown.enabled %}
-        {{ _self.loop(pages) }}
-    {% else %}
-        {% for page in pages.children.visible %}
-            {% set current_page = (page.active or page.activeChild) ? 'selected' : '' %}
-            <li class="{{ current_page }}">
-                <a href="{{ page.url }}">
-                    {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
-                    {{ page.menu }}
-                </a>
-            </li>
-        {% endfor %}
-    {% endif %}
-    {% for mitem in site.menu %}
-        <li>
-            <a href="{{ mitem.url }}">
-                {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
-                {{ mitem.text }}
-            </a>
-        </li>
-    {% endfor %}
+<ul id="slide-out" class="sidenav valign-wrapper">
+  <div>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">build</i>Zum Tuningkonfigurator</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">crop_original</i>Galerie</a></li>
+    <li><a class="waves-effect"><i class="material-icons">contact_mail</i>Kontakt</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">question_answer</i>FAQ</a></li>
+  </div>
 </ul>
-

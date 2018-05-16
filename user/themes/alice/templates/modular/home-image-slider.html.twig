@@ -1,0 +1,5 @@
+<div class="owl-carousel owl-theme">
+  {% for image in page.media.images %}
+    {{ image.cropZoom(400, 200).html }}
+  {% endfor %}
+</div>

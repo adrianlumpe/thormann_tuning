@@ -4,15 +4,12 @@
 {% include 'partials/head.html.twig' %}
 
 
-<body id="top" class="{{ page.header.body_classes }}">
+<body id="{{ page.slug }}">
+{% include 'partials/header.html.twig' %}
 
-{% block body %}
-  <section id="body">
-    <div class="wrapper padding">
-      {% block content %}{% endblock %}
-    </div>
-  </section>
-{% endblock %}
+<main>
+  {% block content %}{% endblock %}
+</main>
 
 {% include 'partials/footer.html.twig' %}
 
