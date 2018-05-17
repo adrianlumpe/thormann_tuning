@@ -2,6 +2,8 @@
   background-color: white
   position: fixed
   z-index: 9000
+  @media only screen and (max-width: 992px)
+    max-height: 56px
 
   img
     @media only screen and (min-width: 993px)
@@ -19,15 +21,16 @@
   #menubutton
     color: black
     width: 56px
+    height: 56px
     text-align: center
-    margin-left: 0
-    transform: rotate(0deg)
-    transition: transform 0.25s
-    i
-      font-size: 32px
-      margin-top: 11px
+    margin-left: 5px
+    margin-top: 16px
+    @media only screen and (min-width: 600px)
+      margin-top: 12px
+    padding: 0
 
-
+    .hamburger-inner
+      top: 3px
 
   ul
     li

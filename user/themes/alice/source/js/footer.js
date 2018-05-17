@@ -13,11 +13,10 @@ $(document).ready(function(){
     var sideNav = M.Sidenav.getInstance($(".sidenav"));
     if(sideNav.isOpen) {
       sideNav.close();
-      $(this).css("transform", "rotate(0deg)");
     }
     else {
       sideNav.open();
-        $(this).css("transform", "rotate(-90deg)");
     }
+    $(this).toggleClass("is-active");
   });
 });

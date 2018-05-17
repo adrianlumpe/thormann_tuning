@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "hamburgers": "^0.9.3",
     "materialize-css": "^1.0.0-rc.1",
     "owl.carousel": "^2.3.4"
   },
