@@ -1,0 +1,29 @@
+title: Galerie
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        galery:
+          type: tab
+          title: Gallery
+          fields:
+            header.cards:
+              name: cards
+              type: list
+              style: horizontal
+              label: Bilder-Karten
+              fields:
+                .caption:
+                  type: text
+                  label: Bildunterschrift
+                .pic-url:
+                  type: filepicker
+                  label: Bildpfad
+                  preview_images: true

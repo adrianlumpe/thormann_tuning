@@ -1,0 +1,30 @@
+title: FAQ
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        galery:
+          type: tab
+          title: FAQ
+          fields:
+            header.faq:
+              name: faq
+              type: list
+              style: horizontal
+              label: Fragen und Antworten
+              fields:
+                .question:
+                  type: text
+                  label: Frage
+                .answer:
+                  type: textarea
+                  label: Antwort
+                  validate:
+                    required: true

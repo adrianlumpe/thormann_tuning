@@ -1,5 +1,4 @@
 <?php
-
 namespace Grav\Plugin\Admin\Twig;
 
 use Grav\Common\Grav;

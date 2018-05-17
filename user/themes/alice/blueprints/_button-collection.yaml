@@ -1,0 +1,36 @@
+title: Home Button Collection
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+            header.buttons:
+              name: buttons
+              type: list
+              style: vertical
+              label: Buttons
+              fields:
+                .text:
+                  type: text
+                  label: Text
+                .url:
+                  type: text
+                  label: URL
+                .primary:
+                  type: toggle
+                  label: Primary
+                  highlight: 1
+                  default: 1
+                  options:
+                      1: 'Yes'
+                      0: 'No'
+                  validate:
+                      type: bool

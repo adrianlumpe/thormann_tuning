@@ -1,4 +1,5 @@
 ---
+title: Button-Collection
 id: button-collection
 buttons:
   -
