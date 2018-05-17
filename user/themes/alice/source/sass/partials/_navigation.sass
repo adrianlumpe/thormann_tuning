@@ -1,7 +1,47 @@
 .nav-bar
   background-color: white
-  .brand-logo
-
+  position: fixed
+  //z-index: 9000
 
   img
+    @media only screen and (min-width: 993px)
+      margin-top: 7px
+    @media only screen and (max-width: 992px)
+      margin-top: 3px
     max-height: 50px
+
+  a
+    @media only screen and (min-width: 993px)
+      max-height: 64px
+    @media only screen and (max-width: 992px)
+      max-height: 56px
+
+  .sidenav-trigger
+    color: black
+    width: 64px
+    text-align: center
+    margin-left: 0
+    i
+      font-size: 32px
+
+
+
+  ul
+    li
+      a
+        color: black
+      a:hover
+        background-color: rgb(238, 185, 189)
+
+.sidenav-close
+  position: fixed
+  color: black
+  width: 64px
+  text-align: center
+  margin-left: 0
+
+.link-container
+  height: 100vh
+
+.sidenav
+  //max-height: calc(100vh - 64px)
