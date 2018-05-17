@@ -1,6 +1,6 @@
 <nav class="nav-bar">
   <div class="nav-wrapper">
-    <a href="#!" data-target="slide-out" class="sidenav-trigger waves-effect waves-red"><i class="material-icons">menu</i></a>
+    <a href="#!" id="menubutton" class="left"><i class="material-icons">menu</i></a>
     <a href="/" class="brand-logo"><img src="{{ url('theme://assets/img/logo_nav.png') }}"></a>
     <ul class="right hide-on-med-and-down">
       {% include 'partials/links.html.twig' %}
@@ -8,10 +8,8 @@
   </div>
 </nav>
 
-<ul id="slide-out" class="sidenav">
-  <div class="valign-wrapper link-container">
+<ul id="slide-out" class="sidenav valign-wrapper">
     <div>
       {% include 'partials/links.html.twig' %}
     </div>
-  </div>
 </ul>

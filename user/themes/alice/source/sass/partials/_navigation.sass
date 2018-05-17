@@ -1,7 +1,7 @@
 .nav-bar
   background-color: white
   position: fixed
-  //z-index: 9000
+  z-index: 9000
 
   img
     @media only screen and (min-width: 993px)
@@ -16,11 +16,13 @@
     @media only screen and (max-width: 992px)
       max-height: 56px
 
-  .sidenav-trigger
+  #menubutton
     color: black
-    width: 64px
+    width: 56px
     text-align: center
     margin-left: 0
+    transform: rotate(0deg)
+    transition: transform 0.25s
     i
       font-size: 32px
 
@@ -33,15 +35,6 @@
       a:hover
         background-color: rgb(238, 185, 189)
 
-.sidenav-close
-  position: fixed
-  color: black
-  width: 64px
-  text-align: center
-  margin-left: 0
-
-.link-container
-  height: 100vh
-
 .sidenav
-  //max-height: calc(100vh - 64px)
+  max-height: calc(100vh - 56px)
+  margin-top: 56px
