@@ -9,6 +9,6 @@ access:
   site:
     login: 'true'
 hashed_password: $2y$10$7WZTLs3KCpYm/agqTJNOfeWwixqn6lW47uNssWHVDOhUyIGw83T6m
-language: en
+language: de
 twofa_secret: YBSHULM4GZRVSDUUX6AXNRTA5YA66IXZ
 twofa_enabled: false
