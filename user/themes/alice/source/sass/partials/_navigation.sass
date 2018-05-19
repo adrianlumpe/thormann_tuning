@@ -1,6 +1,5 @@
 .nav-bar
   background-color: white
-  position: fixed
   z-index: 9000
   @media only screen and (max-width: 992px)
     max-height: 56px
@@ -33,11 +32,22 @@
       top: 3px
 
   ul
+    height: 64px
     li
+      height: 64px
+      position: relative
+      &.active
+        &::before
+          margin: 0
+          top: 0
+          left: 0
+          position: absolute
+          content: ''
+          width: 100%
+          height: 4px
+          background-color: red
       a
         color: black
-      a:hover
-        background-color: rgb(238, 185, 189)
 
 .sidenav
   max-height: calc(100vh - 56px)

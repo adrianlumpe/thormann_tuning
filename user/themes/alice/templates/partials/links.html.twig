@@ -5,7 +5,7 @@
       {{ _self.loop(p) }}
     {% else %}
       {% if p.header.nav.header %}
-        <li><a class="waves-effect waves-red" href="{{ p.url }}"><i
+        <li class="{{ current_page }}"><a class="waves-effect {{ current_page }}" href="{{ p.url }}"><i
                 class="material-icons left">{{ p.header.nav.icon|e }}</i>{{ p.header.nav.header|e }}</a></li>
         {% if p.header.nav.hr %}<li><div class="divider"></div></li>{% endif %}
       {% endif %}
