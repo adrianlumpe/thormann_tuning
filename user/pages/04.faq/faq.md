@@ -1,5 +1,9 @@
 ---
 title: FAQ
+nav:
+  header: FAQ
+  icon: question_answer
+  
 faq:
   -
     question: Über Uns

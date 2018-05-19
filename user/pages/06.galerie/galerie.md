@@ -1,5 +1,8 @@
 ---
 title: Bilder
+nav:
+  header: Galerie
+  icon: crop_original
 cards:
     -
         caption: rtrtzwrw

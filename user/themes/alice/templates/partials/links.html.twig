@@ -1,5 +1,16 @@
-<li><a class="waves-effect waves-red" href="#!"><i class="material-icons left">build</i>Zum Tuningkonfigurator</a></li>
-<li><div class="divider"></div></li>
-<li><a class="waves-effect waves-red" href="#!"><i class="material-icons left">crop_original</i>Galerie</a></li>
-<li><a class="waves-effect waves-red" href="#!"><i class="material-icons left">contact_mail</i>Kontakt</a></li>
-<li><a class="waves-effect waves-red" href="#!"><i class="material-icons left">question_answer</i>FAQ</a></li>
+{% macro loop(page) %}
+  {% for p in page.children.visible %}
+    {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+    {% if p.children.count > 0 %}
+      {{ _self.loop(p) }}
+    {% else %}
+      {% if p.header.nav.header %}
+        <li><a class="waves-effect waves-red" href="{{ p.url }}"><i
+                class="material-icons left">{{ p.header.nav.icon|e }}</i>{{ p.header.nav.header|e }}</a></li>
+        {% if p.header.nav.hr %}<li><div class="divider"></div></li>{% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{{ _self.loop(pages) }}
