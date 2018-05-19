@@ -1,16 +1,26 @@
 ---
 title: Bilder
-nav:
-  header: Galerie
-  icon: crop_original
 cards:
     -
-        caption: rtrtzwrw
-        pic-url: cache_7077601.jpg
+        caption: 'Audi A3 2.0 TDI'
+        pic: teaserbox_6756666.jpg
+        psgain: 36
+        nmgain: 50
     -
-        caption: eerte
-        pic-url: cache_7077601.jpg
+        caption: 'Skoda Octavia RS'
+        pic: teaserbox_6756535.jpg
+        psgain: 36
+        nmgain: 50
+    -
+        caption: 'BMW E93 330d'
+        pic: teaserbox_8716572.jpg
+        psgain: 64
+        nmgain: 100
+nav:
+    header: Galerie
+    icon: crop_original
 ---
+
 ### Bildergalerie - Kundenfahrzeuge
 
 Diese Fahrzeuge wurden bereits erfolgreich von uns optimiert!

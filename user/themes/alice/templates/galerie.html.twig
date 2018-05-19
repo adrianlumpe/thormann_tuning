@@ -1,18 +1,17 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-
-  {% for image in page.media.images %}
-    <div class="card">
-      <div class="card-image">
-        <img class src="{{ image.url }}">
-        <span class="card-title">Card Title</span>
+  <div class="content-wrapper">
+    {% for card in page.header.cards %}
+      <div class="card">
+        <div class="card-image">
+          <img class="materialboxed" src="{{ page.media.images[card.pic].url }}">
+          <span class="card-title">{{ card.caption }}</span>
+        </div>
+        <div class="card-content">
+          <p>Mehrleistung: +{{ card.psgain }}PS / +{{ card.nmgain }}NM</p>
+        </div>
       </div>
-      <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-      </div>
-    </div>
-  {% endfor %}
-
+    {% endfor %}
+  </div>
 {% endblock %}

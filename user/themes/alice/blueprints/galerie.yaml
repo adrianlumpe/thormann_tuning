@@ -23,7 +23,17 @@ form:
                 .caption:
                   type: text
                   label: Bildunterschrift
-                .pic-url:
+                .pic:
                   type: filepicker
                   label: Bildpfad
                   preview_images: true
+                .psgain:
+                  type: text
+                  label: +PS
+                  validate:
+                    type: int
+                .nmgain:
+                  type: text
+                  label: +NM
+                  validate:
+                    type: int
