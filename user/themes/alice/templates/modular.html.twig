@@ -2,12 +2,10 @@
 
 {% block content %}
 
-<div class="content-wrapper">
   {% for module in page.collection() %}
     <section id="{{ module.header.id }}">
       {{ module.content }}
     </section>
   {% endfor %}
-</div>
 
 {% endblock %}

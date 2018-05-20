@@ -18,7 +18,7 @@ cards:
         nmgain: 100
 nav:
     header: Galerie
-    icon: crop_original
+    icon: photo
 ---
 
 ### Bildergalerie - Kundenfahrzeuge

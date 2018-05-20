@@ -1,19 +1,21 @@
-<div class="collection-wrapper">
-  <ul class="collection">
-    {% for btn in header.buttons %}
-      <a class="waves-effect waves-orange" href="#">
-        <li class="collection-item">
-          <div class="row valign-wrapper">
-            <div class="col s2">
-              <i class="material-icons">{{ btn.icon }}</i>
+<div class="content-wrapper">
+  <div class="collection-wrapper">
+    <ul class="collection">
+      {% for btn in header.buttons %}
+        <a class="waves-effect waves-orange" href="#">
+          <li class="collection-item">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <i class="material-icons">{{ btn.icon }}</i>
+              </div>
+              <div class="col s8">
+                <p>{{ btn.caption }}</p>
+              </div>
+              <div class="col s2"><i class="material-icons">chevron_right</i></div>
             </div>
-            <div class="col s8">
-              <p>{{ btn.caption }}</p>
-            </div>
-            <div class="col s2"><i class="material-icons">chevron_right</i></div>
-          </div>
-        </li>
-      </a>
-    {% endfor %}
-  </ul>
+          </li>
+        </a>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

@@ -3,19 +3,21 @@
 {% block content %}
 
   <div class="content-wrapper">
+    <div class="container">
+      <div class="center-align">
+        {{ page.content }}
+      </div>
 
-    <div class="center-align">
-      {{ page.content }}
+      <ul class="collapsible popout">
+        {% for item in header.faq %}
+          <li>
+            <div class="collapsible-header flow-text">{{ item.question }}</div>
+            <div class="collapsible-body"><span>{{ item.answer }}</span></div>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
 
-    <ul class="collapsible popout">
-      {% for item in header.faq %}
-        <li>
-          <div class="collapsible-header">{{ item.question }}</div>
-          <div class="collapsible-body"><span>{{ item.answer }}</span></div>
-        </li>
-      {% endfor %}
-    </ul>
   </div>
 
 {% endblock %}

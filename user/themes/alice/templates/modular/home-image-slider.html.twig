@@ -1,5 +1,7 @@
-<div class="owl-carousel owl-theme">
-  {% for image in page.media.images %}
-    {{ image.cropZoom(800, 400).html }}
-  {% endfor %}
+<div class="content-wrapper">
+  <div class="owl-carousel owl-theme z-depth-3">
+    {% for image in page.media.images %}
+      {{ image.cropZoom(1600,800).html }}
+    {% endfor %}
+  </div>
 </div>

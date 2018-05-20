@@ -2,16 +2,18 @@
 
 {% block content %}
   <div class="content-wrapper">
-    {% for card in page.header.cards %}
-      <div class="card">
-        <div class="card-image">
-          <img class="materialboxed" src="{{ page.media.images[card.pic].url }}">
-          <span class="card-title">{{ card.caption }}</span>
+    <div class="grid">
+      {% for card in page.header.cards %}
+        <div class="card grid-item">
+          <div class="card-image">
+            <img class="materialboxed" src="{{ page.media.images[card.pic].url }}">
+            <span class="card-title">{{ card.caption }}</span>
+          </div>
+          <div class="card-content">
+            <p>Mehrleistung: +{{ card.psgain }}PS / +{{ card.nmgain }}NM</p>
+          </div>
         </div>
-        <div class="card-content">
-          <p>Mehrleistung: +{{ card.psgain }}PS / +{{ card.nmgain }}NM</p>
-        </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 {% endblock %}

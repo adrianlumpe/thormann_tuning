@@ -1,7 +1,18 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
+  <div class="content-wrapper">
+    <div class="form-wrapper">
+      {% include "forms/form.html.twig" %}
+    </div>
 
-  <p>Kontakt</p>
+    <p>{{ page.content }}</p>
+
+    <div class="video-container z-depth-3">
+      <iframe frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUR5QYf3Po0cR9UTipoNi6MY&key=AIzaSyCswZt_hP9hhkbcr7Y7OK3YOZjs08kkK8s"
+              allowfullscreen></iframe>
+    </div>
+  </div>
 
 {% endblock %}
