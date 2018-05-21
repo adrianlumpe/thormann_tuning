@@ -1,0 +1,15 @@
+enabled: true
+from: a9c58e94c2-ceef92@inbox.mailtrap.io
+to: a9c58e94c2-ceef92@inbox.mailtrap.io
+mailer:
+  engine: smtp
+  smtp:
+    server: smtp.mailtrap.io
+    port: 25
+    encryption: none
+    user: e0ae1c421d1e87
+    password: "\t9e6f47ffebb60f"
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: false

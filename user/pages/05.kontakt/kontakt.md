@@ -8,14 +8,21 @@ form:
     name: contact
     fields:
       - name: name
+        label: Name
+        id: name
         autocomplete: on
-        type: text
+        type: custom-text
         validate:
           required: true
       - name: email
         label: Email
-        placeholder: Enter your email address
         type: email
+        validate:
+          required: true
+      - name: telefon
+        id: telefon
+        label: Telefonnummer
+        type: custom-text
         validate:
           required: true
       - name: message
@@ -33,9 +40,7 @@ form:
           required: true
     buttons:
         - type: submit
-          value: Submit
-        - type: reset
-          value: Reset
+          value: Formular senden
     process:
         - email:
             subject: "[Site Contact Form] {{ form.value.name|e }}"
