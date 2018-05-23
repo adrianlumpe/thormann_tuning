@@ -8,6 +8,7 @@
 {% include 'partials/header.html.twig' %}
 
 <main>
+  {% block banner %}{% include 'partials/banner.html.twig' %}{% endblock %}
   {% block content %}{% endblock %}
 </main>
 

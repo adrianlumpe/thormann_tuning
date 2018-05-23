@@ -1,14 +1,14 @@
 enabled: true
-from: a9c58e94c2-ceef92@inbox.mailtrap.io
-to: a9c58e94c2-ceef92@inbox.mailtrap.io
+from: adrian.lumpe@t-online.de
+to: adrian.lumpe@t-online.de
 mailer:
   engine: smtp
   smtp:
-    server: smtp.mailtrap.io
-    port: 25
-    encryption: none
-    user: e0ae1c421d1e87
-    password: "\t9e6f47ffebb60f"
+    server: securesmtp.t-online.de
+    port: 587
+    encryption: tls
+    user: adrian.lumpe@t-online.de
+    password: neuSEEland2015
   sendmail:
     bin: '/usr/sbin/sendmail -bs'
 content_type: text/html

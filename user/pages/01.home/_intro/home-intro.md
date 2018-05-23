@@ -1,7 +1,7 @@
 ---
 title: Intro
 id: intro
-
+visible: true
 ---
 ### Chiptuning aus Rödental
 ---

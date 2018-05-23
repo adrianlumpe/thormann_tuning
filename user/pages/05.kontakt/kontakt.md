@@ -1,5 +1,6 @@
 ---
 title: Kontakt
+bannerImg: highway.jpeg
 nav:
   header: Kontakt
   icon: contact_mail
@@ -32,7 +33,7 @@ form:
         validate:
           required: true
       - name: g-recaptcha-response
-        label: Captcha
+        label: false
         type: captcha
         recaptcha_site_key: 6LczPloUAAAAACH5LxWDjjVbozQqElk-WVdl3NyK
         recaptcha_not_validated: 'Captcha not valid!'

@@ -1,6 +1,7 @@
 ---
 title: Button-Collection
 id: button-collection
+visible: true
 buttons:
   -
     caption: Kontakt

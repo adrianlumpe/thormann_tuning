@@ -1,5 +1,6 @@
 ---
 title: Bilder
+bannerImg: gallery-banner.jpg
 cards:
     -
         caption: 'Audi A3 2.0 TDI'

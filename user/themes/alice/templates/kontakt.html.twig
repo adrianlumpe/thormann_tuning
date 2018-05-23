@@ -2,9 +2,17 @@
 
 {% block content %}
   <div class="content-wrapper">
-    <div class="form-wrapper z-depth-3">
-      {% include "forms/form.html.twig" %}
+    <div class="row">
+      <div class="col s6">
+        <div class="text-wrapper">
+          {% include "forms/form.html.twig" %}
+        </div>
+      </div>
+      <div class="col s6">
+        Hii
+      </div>
     </div>
+
 
     <p>{{ page.content }}</p>
 

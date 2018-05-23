@@ -1,5 +1,6 @@
 ---
 title: Leistungen
+bannerImg: leistungstacho.jpg
 nav:
   header: Leistungen
   icon: assessment

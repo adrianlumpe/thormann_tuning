@@ -1,5 +1,6 @@
 ---
 title: FAQ
+bannerImg: faq-banner.jpg
 nav:
   header: FAQ
   icon: question_answer
