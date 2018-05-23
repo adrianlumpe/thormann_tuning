@@ -26,10 +26,21 @@ form:
         type: custom-text
         validate:
           required: true
+      - name: kfz-standort
+        id: kfz-standort
+        label: Fahrzeugstandort
+        type: custom-text
+        validate:
+          required: true
+      - name: marke-und-modell
+        id: marke-und-modell
+        label: Marke und Modell (z.B. VW Golf 4)
+        type: custom-text
+        validate:
+          required: true
       - name: message
-        label: Message
-        placeholder: Enter your message
-        type: textarea
+        label: Nachricht
+        type: custom-textarea
         validate:
           required: true
       - name: g-recaptcha-response
