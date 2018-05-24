@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-bannerImg: highway.jpeg
+bannerImg: asphalt-berge.jpeg
 nav:
   header: Kontakt
   icon: contact_mail
@@ -17,7 +17,8 @@ form:
           required: true
       - name: email
         label: Email
-        type: email
+        id: email
+        type: custom-email
         validate:
           required: true
       - name: telefon
@@ -55,7 +56,7 @@ form:
           value: Formular senden
     process:
         - email:
-            subject: "[Site Contact Form] {{ form.value.name|e }}"
+            subject: "[Website Kontaktformular] {{ form.value.name|e }}"
             body: "{% include 'forms/data.html.twig' %}"
-        - message: Thank you for getting in touch!
+        - message: Vielen Dank für ihre Nachricht!
 ---

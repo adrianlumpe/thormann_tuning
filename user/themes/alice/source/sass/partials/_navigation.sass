@@ -2,7 +2,7 @@
   background-color: white
   position: fixed
   z-index: 9000
-  opacity: .9
+  opacity: .92
   @media only screen and (max-width: 992px)
     max-height: 56px
 
@@ -38,6 +38,7 @@
     li
       height: 64px
       position: relative
+
       &.active
         &::before
           margin: 0
@@ -50,14 +51,16 @@
           background-color: red
       a
         color: black
+        font-size: 1.1rem
         i
           display: none
       &.active
-        background-color: $grey
+        background-color: white
         a
-          color: white
+          color: black
           i
             display: block
+            color: grey
 
 .sidenav
   max-height: calc(100vh - 56px)
