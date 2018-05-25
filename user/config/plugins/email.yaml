@@ -8,7 +8,6 @@ mailer:
     port: 587
     encryption: tls
     user: adrian.lumpe@t-online.de
-    password: neuSEEland2015
   sendmail:
     bin: '/usr/sbin/sendmail -bs'
 content_type: text/html

@@ -1572,7 +1572,7 @@ textarea.frontmatter + .CodeMirror {
 }
 
 .form-fieldset {
-  margin: 1rem 2rem
+  margin: 1rem 1.5rem
 }
 
 .form-fieldset--label label {

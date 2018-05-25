@@ -770,16 +770,16 @@ form .form-display-wrapper table tr {
 }
 
 .form-fieldset {
-  background-color: #f7f7f7;
-  border: 2px solid #e1e1e1
+  background-color: #fcfcfc;
+  border: 1px solid #e6e6e6
 }
 
 .form-fieldset--label {
-  background-color: #f3f3f3
+  background-color: #f5f5f5
 }
 
 .form-fieldset--label:hover, .form-fieldset input:checked + .form-fieldset--label {
-  background-color: #eee
+  background-color: #f0f0f0
 }
 
 #admin-main #admin-topbar {
