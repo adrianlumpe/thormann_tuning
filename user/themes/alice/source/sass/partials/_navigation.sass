@@ -1,5 +1,5 @@
 .nav-bar
-  background-color: white
+  background: linear-gradient(#d4d9df, #fdfbfb)
   position: fixed
   z-index: 9000
   opacity: .92
@@ -8,10 +8,9 @@
 
   img
     @media only screen and (min-width: 993px)
-      margin-top: 7px
+      max-height: 64px
     @media only screen and (max-width: 992px)
-      margin-top: 3px
-    max-height: 50px
+      max-height: 56px
 
   a
     @media only screen and (min-width: 993px)
@@ -34,11 +33,9 @@
       top: 3px
 
   ul
-
     li
       height: 64px
       position: relative
-
       &.active
         &::before
           margin: 0
@@ -49,18 +46,17 @@
           width: 100%
           height: 4px
           background-color: red
-      a
-        color: black
-        font-size: 1.1rem
-        i
-          display: none
-      &.active
-        background-color: white
         a
           color: black
           i
             display: block
             color: grey
+      a
+        color: black
+        font-size: 1.1rem
+        i
+          display: none
+
 
 .sidenav
   max-height: calc(100vh - 56px)
