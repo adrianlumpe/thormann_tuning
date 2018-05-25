@@ -1,0 +1,43 @@
+title: Leistungen
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        overview:
+          type: tab
+          title: Leistungen
+          fields:
+            header.overview:
+              name: overview
+              type: list
+              style: horizontal
+              label: Banner
+              fields:
+                .icon:
+                  type: text
+                  label: Icon (FontAwesome)
+                  validate:
+                    required: true
+                .text:
+                  type: textarea
+                  label: Inhalt
+            header.services:
+              name: services
+              type: list
+              style: horizontal
+              label: Leistungen
+              fields:
+                .text:
+                  type: textarea
+                  label: Leistung
+            header.additional:
+              name: additional
+              type: textarea
+              label: Weitere Info
