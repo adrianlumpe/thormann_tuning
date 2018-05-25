@@ -7,10 +7,12 @@ $(document).ready(function(){
     var sideNav = M.Sidenav.getInstance($(".sidenav"));
     if(sideNav.isOpen) {
       sideNav.close();
+      $(this).removeClass("is-active");
     }
     else {
       sideNav.open();
+      $(this).addClass("is-active");
     }
-    $(this).toggleClass("is-active");
+
   });
 });
