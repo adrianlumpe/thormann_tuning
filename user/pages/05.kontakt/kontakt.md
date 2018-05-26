@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-bannerImg: asphalt-berge.jpeg
+bannerImg: maps_screenshot.png
 nav:
   header: Kontakt
   footer: Kontakt
@@ -40,6 +40,30 @@ form:
         type: custom-text
         validate:
           required: true
+      - name: motorisierung
+        id: motorisierung
+        label: Motorisierung (z.B. 1.9 TDI)
+        type: custom-text
+        validate:
+          required: true
+      - name: serienleistung
+        id: serienleistung
+        label: Serienleistung (z.B. 130PS)
+        type: custom-text
+        validate:
+          required: true
+      - name: erstzulassung
+        id: erstzulassung
+        label: Erstzulassung (z.B. 03/2002)
+        type: custom-text
+        validate:
+          required: true
+      - name: getriebe
+        id: getriebe
+        label: Getriebe (z.B. DSG)
+        type: custom-text
+        validate:
+          required: true      
       - name: message
         label: Nachricht
         type: custom-textarea
@@ -54,6 +78,7 @@ form:
           required: true
     buttons:
         - type: submit
+          classes: btn
           value: Formular senden
     process:
         - email:

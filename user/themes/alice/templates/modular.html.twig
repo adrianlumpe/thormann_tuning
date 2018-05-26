@@ -1,6 +1,8 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
+  {% block banner %}
+  {% endblock %}
 
   {% for module in page.collection() if module.header.visible %}
       <section id="{{ module.header.id }}">

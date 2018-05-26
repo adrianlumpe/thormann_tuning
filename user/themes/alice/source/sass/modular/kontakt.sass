@@ -1,4 +1,25 @@
 #kontakt
+  .head-banner
+    position: relative
+    margin-top: 64px
+    transition: .5s
+    &.expanded
+      height: calc(100vh - 64px)
+    #maps-btn
+      position: absolute
+      bottom: 0
+      left: 50%
+      background: linear-gradient(to bottom, #182848, #4b6cb7)
+      transform: translateX(-50%)
+      .show-on-expand
+        display: none
+      &.rotate
+        .hide-on-expand
+          display: none
+        .show-on-expand
+          display: inline
+        i
+          transform: rotate(180deg)
   form
     textarea
       min-height: 100px

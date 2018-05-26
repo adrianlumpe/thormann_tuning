@@ -7,7 +7,7 @@
     </div>
     <div class="gallery-grid">
       {% for card in page.header.cards %}
-        <div class="card grid-item">
+        <div class="card grid-item hide-for-loading">
           <div class="card-image">
             <img class="materialboxed" src="{{ page.media.images[card.pic].url }}">
             <span class="card-title">{{ card.caption }}</span>

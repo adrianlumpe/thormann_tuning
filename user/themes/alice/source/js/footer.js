@@ -20,6 +20,7 @@ var $grid = $('.gallery-grid').isotope({
 $(document).ready(function(){
 
   $grid.imagesLoaded( function() {
+    $('.grid-item').removeClass('hide-for-loading');
     $grid.isotope('layout');
   });
 
@@ -35,4 +36,9 @@ $(document).ready(function(){
     }
   });
 });
+
+$('#maps-btn').click(function () {
+  $('.head-banner').toggleClass('expanded')
+  $('#maps-btn').toggleClass('rotate')
+})
 

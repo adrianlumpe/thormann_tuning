@@ -1,5 +1,16 @@
 {% extends 'partials/base.html.twig' %}
 
+{% block banner %}
+  <div class="head-banner z-depth-1">
+    <button id="maps-btn" class="btn waves-effect waves-light" type="submit" name="action">Karte <span class="hide-on-expand">ausklappen</span><span class="show-on-expand">einklappen</span>
+      <i class="material-icons right">arrow_drop_down_circle</i>
+    </button>
+    <iframe frameborder="0" style="border:0" height="100%" width="100%"
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUR5QYf3Po0cR9UTipoNi6MY&key=AIzaSyCswZt_hP9hhkbcr7Y7OK3YOZjs08kkK8s"
+            allowfullscreen></iframe>
+  </div>
+{% endblock %}
+
 {% block content %}
   <div class="content-wrapper">
     <div class="row">
@@ -9,18 +20,11 @@
         </div>
       </div>
       <div class="col l6 s12">
-        Hii
+        Auf diese Seite kommt das Logo und alle Kontaktdaten
       </div>
     </div>
 
-
     <p>{{ page.content }}</p>
-
-    <div class="video-container z-depth-3">
-      <iframe frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJUR5QYf3Po0cR9UTipoNi6MY&key=AIzaSyCswZt_hP9hhkbcr7Y7OK3YOZjs08kkK8s"
-              allowfullscreen></iframe>
-    </div>
   </div>
 
 {% endblock %}

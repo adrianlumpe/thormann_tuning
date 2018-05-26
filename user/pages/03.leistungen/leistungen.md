@@ -8,7 +8,7 @@ overview:
         icon: 'fas fa-tachometer-alt'
         text: 'Sie möchten mehr Leistung aus Ihrem Fahrzeug herausholen?'
     -
-        icon: 'fas fa-hand-peace'
+        icon: 'fas fa-angle-double-up'
         text: 'Sie möchten schaltfauler fahren können?'
 bannerImg: leistungstacho.jpg
 nav:
