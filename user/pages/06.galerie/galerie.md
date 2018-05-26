@@ -22,7 +22,7 @@ nav:
     icon: photo
 ---
 
-### Bildergalerie - Kundenfahrzeuge
+#### Bildergalerie - Kundenfahrzeuge
 
 Diese Fahrzeuge wurden bereits erfolgreich von uns optimiert!
 

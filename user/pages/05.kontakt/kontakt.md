@@ -3,6 +3,7 @@ title: Kontakt
 bannerImg: asphalt-berge.jpeg
 nav:
   header: Kontakt
+  footer: Kontakt
   icon: contact_mail
   
 form:

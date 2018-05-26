@@ -1,9 +1,14 @@
 #galerie
   main
-    .content-wrapper
-      padding: 20px
     .card
-      margin: 0 auto
+      margin-top: 0
       margin-bottom: 20px
-      width: 100%
-      max-width: 400px
+      @media only screen and (max-width: 992px)
+        width: calc(100%/2 - 20px/2)
+      @media only screen and (max-width: 600px)
+        width: 100%
+      width: calc(100%/3 - 40px*1/3)
+      .card-title
+        text-shadow: 1px 1px #000
+  .gallery-grid
+    margin: 20px
