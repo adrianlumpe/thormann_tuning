@@ -1,7 +1,7 @@
 .nav-bar
   background: linear-gradient(#29323c, #485563)
   position: fixed
-  z-index: 500
+  z-index: 9000
   opacity: .95
   @media only screen and (max-width: 992px)
     max-height: 56px
@@ -19,6 +19,7 @@
       max-height: 56px
 
   #menubutton
+    z-index: 9001
     color: white
     width: 56px
     height: 56px
@@ -31,6 +32,12 @@
 
     .hamburger-inner
       top: 3px
+      background-color: white
+      &:before
+        background-color: white
+      &:after
+        background-color: white
+
 
   ul
     li
