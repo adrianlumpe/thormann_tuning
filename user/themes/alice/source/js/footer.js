@@ -26,13 +26,15 @@ $(document).ready(function(){
 
   $("#menubutton").click(function(){
     var sideNav = M.Sidenav.getInstance($(".sidenav"));
-    if(sideNav.isOpen) {
-      sideNav.close();
-      $(this).removeClass("is-active");
-    }
-    else {
+    console.log(sideNav.isOpen);
+    if(sideNav.isOpen == false){
       sideNav.open();
       $(this).addClass("is-active");
+
+    }
+    else {
+      sideNav.close();
+      $(this).removeClass("is-active");
     }
   });
 });
