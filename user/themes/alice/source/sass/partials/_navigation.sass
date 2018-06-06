@@ -3,16 +3,11 @@
   position: fixed
   z-index: 9000
   opacity: .95
-  @media only screen and (max-width: 992px)
-    max-height: 56px
+  height: 64px
   a
     max-height: 64px
-    @media only screen and (max-width: 992px)
-      max-height: 56px
   img
     max-height: 44px
-    @media only screen and (max-width: 992px)
-      max-height: 36px
 
   .brand-logo
     padding: 10px 20px 10px
@@ -20,15 +15,16 @@
   #menubutton
     z-index: 9001
     color: white
-    width: 56px
-    height: 56px
+    width: 64px
+    height: 64px
     text-align: center
     margin-left: 5px
-    margin-top: 16px
+    margin-top: 20px
     @media only screen and (min-width: 600px)
       margin-top: 12px
     padding: 0
-
+    &.hamburger:hover
+      opacity: 1
     .hamburger-inner
       top: 3px
       background-color: white
@@ -68,4 +64,4 @@
 
 .sidenav
   max-height: calc(100vh - 56px)
-  margin-top: 56px
+  margin-top: 64px
