@@ -2,7 +2,8 @@
 
 {% block banner %}
   <div class="head-banner z-depth-1">
-    <button id="maps-btn" class="btn waves-effect waves-light" type="submit" name="action">Karte <span class="hide-on-expand">ausklappen</span><span class="show-on-expand">einklappen</span>
+    <button id="maps-btn" class="btn waves-effect waves-light" type="submit" name="action">Karte <span
+          class="hide-on-expand">ausklappen</span><span class="show-on-expand">einklappen</span>
       <i class="material-icons right">arrow_drop_down_circle</i>
     </button>
     <iframe frameborder="0" style="border:0" height="100%" width="100%"
@@ -13,29 +14,33 @@
 
 {% block content %}
   <div class="content-wrapper">
-    <div class="row">
-      <div class="col l6 s12">
-        <div class="text-wrapper">
-          {% include "forms/form.html.twig" %}
+  <div class="row">
+    <div class="col l6 s12">
+      <div class="card">
+        <div class="card-content">
+          <img class="col l12 s12" src="{{ url('theme://assets/img/logo_big.png') }}">
+          <span class="card-title">Hier finden sie uns</span>
+          <p>Gereuther Weg 21</p>
+          <p>D-96472 Rödental</p>
+          <br>
+          <p><i class="material-icons">local_phone</i> 0175 4374095</p>
+          <br>
+          <p><i class="material-icons">email</i> info@thormann-tuning.de</p>
         </div>
       </div>
-      <div class="col l6 s12">
-        <div class="card">
-          <div class="card-content">
-            <img class="col l12 s12" src="{{ url('theme://assets/img/logo_big.png') }}">
-            <span class="card-title">Hier finden sie uns</span>
-            <p>Gereuther Weg 21</p>
-            <p>D-96472 Rödental</p>
-            <br>
-            <p><i class="material-icons">local_phone</i> 0175 4374095</p>
-            <br>
-            <p><i class="material-icons">email</i> info@thormann-tuning.de</p>
+    </div>
+
+    <div class="col l6 s12">
+      <div class="card">
+        <div class="card-content">
+          {{ page.content }}
+          <div class="">
+            {% include "forms/form.html.twig" %}
           </div>
         </div>
       </div>
     </div>
 
-    <p>{{ page.content }}</p>
   </div>
 
 {% endblock %}
