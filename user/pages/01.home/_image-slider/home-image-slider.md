@@ -1,5 +1,5 @@
 ---
 title: Image-Slider
 id: image-slider
-visible: false
+visible: true
 ---

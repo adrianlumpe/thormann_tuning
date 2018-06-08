@@ -1,8 +1,10 @@
+
 var M = require('materialize-css');
 var $ = require('jquery');
 var jQueryBridget = require('jquery-bridget');
 var Isotope = require('isotope-layout');
 var ImagesLoaded = require('imagesloaded');
+var Owl = require('owl.carousel');
 jQueryBridget( 'isotope', Isotope, $ );
 jQueryBridget( 'imagesLoaded', ImagesLoaded, $ );
 
@@ -36,6 +38,12 @@ $(document).ready(function(){
       sideNav.close();
       $(this).removeClass("is-active");
     }
+  });
+
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true
   });
 });
 
