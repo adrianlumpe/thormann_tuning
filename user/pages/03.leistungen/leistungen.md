@@ -9,7 +9,7 @@ overview:
         text: 'Sie möchten mehr Leistung aus Ihrem Fahrzeug herausholen?'
     -
         icon: 'fas fa-angle-double-up'
-        text: 'Sie möchten schaltfauler fahren können?'
+        text: 'Sie möchten ein neues Fahrgefühl?'
 bannerImg: leistungstacho.jpg
 nav:
     header: Leistungen

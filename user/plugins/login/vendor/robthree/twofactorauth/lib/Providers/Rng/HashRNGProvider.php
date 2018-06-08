@@ -1,5 +1,4 @@
 <?php
-
 namespace RobThree\Auth\Providers\Rng;
 
 class HashRNGProvider implements IRNGProvider

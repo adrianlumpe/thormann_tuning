@@ -1,5 +1,4 @@
 <?php
-
 namespace RobThree\Auth;
 
 use RobThree\Auth\Providers\Qr\IQRCodeProvider;

@@ -559,6 +559,10 @@ form .selectize-control.single .selectize-input input, form .selectize-control.m
   color: #646e7c
 }
 
+form .selectize-control.single .selectize-input a.remove, form .selectize-control.multi .selectize-input a.remove {
+  color: #F6F6F6 !important
+}
+
 form .form-input-wrapper .form-input-addon {
   border: 1px solid #e6e6e6;
   background: #fff

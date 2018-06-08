@@ -5,7 +5,6 @@
  * @copyright  Copyright (C) 2014 - 2018 RocketTheme, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
-
 namespace Grav\Plugin\Login\TwoFactorAuth;
 
 use Grav\Common\Grav;
